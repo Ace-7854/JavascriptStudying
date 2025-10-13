@@ -1,0 +1,44 @@
+/* Use a clean, friendly font */
+body {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #f9fafb;
+  color: #222;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  line-height: 1.6;
+}
+
+/* Headline */
+h1 {
+  font-size: 2rem;
+  color: #0077b6; /* ocean vibe */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+  margin: 1rem 0;
+}
+
+/* Inline code styling */
+code {
+  background: #eef6ff;
+  color: #d6336c;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: "Fira Code", monospace;
+}
+
+/* Links */
+a {
+  color: #0077b6;
+  text-decoration: none;
+  border-bottom: 1px solid #0077b6;
+}
+
+a:hover {
+  color: #023e8a;
+  border-bottom-color: #000;
+}
