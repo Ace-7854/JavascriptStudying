@@ -59,16 +59,16 @@ daysOnEarth(66);
 //DONE
 //**STEP 9**: Write a function of your choice using the arrow notation
 // WRITE CODE BELOW THIS COMMENT
-let daysOnEarthNV = function (years) {
+const daysOnEarthNV = (years) => {
 	return years * 365;
 };
 //**STEP 10**: Write two more function using the arrow notation format.
 
 // WRITE CODE BELOW THIS COMMENT
-let logItem = function (log) {
+let logItem = (log) => {
 	console.log(log);
 };
-let addNewItem = function (item) {
+let addNewItem = (item) => {
 	console.log(item);
 };
 
@@ -93,27 +93,26 @@ const Billy = new Dog("a breed", "2cm");
 
 class Car {
 	constructor(make, year) {
-		this.make = make;
-		this.year = year;
+		this._make = make; //_ is private property
+		this._year = year;
 	}
-	set_make(make) {
-		this.make = make;
+	set make(make) {
+		this._make = make;
 	}
-	set_year(year) {
-		this.year = year;
+	set year(year) {
+		this._year = year;
 	}
-	get_make() {
-		return this.make;
+	get make() {
+		return this._make;
 	}
-	get_year() {
-		return this.year;
+	get year() {
+		return this._year;
 	}
 }
 
 //**STEP 4**: Make two seperate instances of your 'Car' class
 const car1 = new Car("BMW", 1994);
 const car2 = new Car("AUDI", 1996);
-
 //******************* OBJECTS **************************************
 //******************************************************************
 
