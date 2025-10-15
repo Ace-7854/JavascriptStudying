@@ -125,6 +125,7 @@ function App() {
 						{studentsOver21}
 					</ul>
 					{students.map(student => renderStudent(student))}
+					{surfForecast}
 				</div>
 		</main>
 	);
@@ -135,3 +136,4 @@ function App() {
 //************************************************************
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
